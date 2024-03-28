@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Shashank Chauhan</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #000; /* Set text color to black */
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000; /* Ensure header stays on top */
+        }
+
+            header h1 {
+                margin: 0;
+                font-size: 24px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+        .menu-icon {
+            cursor: pointer;
+            font-size: 24px;
+            margin-right: 20px;
+        }
+
+        .menu {
+            background-color: #333;
+            padding: 10px 15px;
+            text-align: left; /* Align menu options to the left */
+            position: fixed;
+            top: 50px; /* Adjust position below the menu icon */
+            left: 0;
+            display: none;
+            z-index: 999; /* Ensure menu stays on top */
+        }
+
+            .menu a {
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                padding: 10px 0;
+            }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        /* Media query for responsive design */
+        @media (max-width: 768px) {
+            .menu-icon {
+                display: block; /* Show the menu icon on smaller screens */
+            }
+
+            .menu {
+                display: none; /* Hide the menu initially on smaller screens */
+            }
+        }
+
+        main {
+            margin-top: 70px; /* Adjust margin to match other pages */
+            padding: 20px;
+        }
+
+            main section {
+                margin-bottom: 40px;
+            }
+
+            main h2 {
+                color: #000; /* Adjust color to match other pages */
+            }
+
+            main ul {
+                list-style: none;
+                padding-left: 0;
+            }
+
+            main li {
+                margin-bottom: 10px;
+            }
+
+        /* Styles for links */
+        footer a {
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Skills</h1>
+        <!-- Menu -->
+        <div class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="experience.html">Experience</a>
+            <a href="education.html">Education</a>
+            <a href="projects.html">Projects</a>
+        </div>
+        <!-- Hamburger Menu Icon -->
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776;
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Skills</h2>
+
+            <h3>Programming Languages:</h3>
+            <ul>
+                <li>
+                    <strong>C#:</strong> C# is a versatile and powerful programming language developed by Microsoft. It is commonly used for building Windows desktop applications, web applications, and games using the Unity game engine. With its strong typing, garbage collection, and advanced features like asynchronous programming, C# offers a robust development environment for various domains. You can find its documentation <a href="https://docs.microsoft.com/en-us/dotnet/csharp/">here</a>.
+
+                </li>
+                <li>
+                    <strong>Python:</strong> Python is a high-level, interpreted programming language known for its simplicity and readability. It is widely used in web development, scientific computing, data analysis, artificial intelligence, automation, and more. Python's extensive standard library and rich ecosystem of third-party packages make it a versatile choice for a wide range of applications. Learn more about Python <a href="https://docs.python.org/">here</a>.
+                </li>
+            </ul>
+
+            <h3>Web Technologies:</h3>
+            <ul>
+                <li>
+                    <strong>ASP.NET:</strong> ASP.NET is a web application framework developed by Microsoft for building dynamic web sites, web applications, and web services. It is built on top of the .NET Framework and supports various programming languages such as C# and VB.NET. ASP.NET provides powerful tools for server-side programming, data access, security, and more. Documentation is available <a href="https://dotnet.microsoft.com/apps/aspnet">here</a>.
+                </li>
+                <li>
+                    <strong>HTML:</strong> HTML (HyperText Markup Language) is the standard markup language for creating web pages and web applications. It defines the structure and content of web documents. HTML provides a foundation for web development and is essential for creating the basic layout and elements of web pages. Learn more about HTML <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">here</a>.
+                </li>
+                <li>
+                    <strong>CSS:</strong> CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of a document written in HTML. It controls the layout, appearance, and formatting of web pages. CSS enables developers to customize the visual aspects of web pages, including colors, fonts, spacing, and more. Documentation can be found <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">here</a>.
+                </li>
+                <li>
+                    <strong>JavaScript:</strong> JavaScript is a lightweight, interpreted programming language primarily used for adding interactivity and dynamic behavior to web pages. It is essential for client-side web development, enabling developers to create interactive features, handle user input, and manipulate the DOM (Document Object Model). JavaScript is widely used in conjunction with HTML and CSS to build modern web applications. Learn more about JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">here</a>.
+                </li>
+            </ul>
+
+            <h3>Frameworks/Libraries:</h3>
+            <ul>
+                <li>
+                    <strong>.NET Framework:</strong> The .NET Framework is a software development framework developed by Microsoft. It provides a comprehensive programming model and libraries for building various types of applications, including desktop, web, and mobile applications. .NET Framework offers features such as memory management, security, and interoperability, making it a powerful tool for developing scalable and reliable software solutions. More information is available <a href="https://docs.microsoft.com/en-us/dotnet/">here</a>.
+                </li>
+                <li>
+                    <strong>LINQ (Language Integrated Query):</strong> LINQ is a set of features introduced in .NET Framework that enables developers to query and manipulate data from different data sources using a unified syntax and programming model. LINQ provides a convenient and expressive way to perform data manipulation operations, such as filtering, sorting, and grouping, directly within the C# language. Documentation can be found <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/">here</a>.
+                </li>
+                <li>
+                    <strong>jQuery:</strong> jQuery is a fast, small, and feature-rich JavaScript library designed to simplify client-side scripting of HTML. It provides an easy-to-use API for traversing and manipulating the DOM (Document Object Model), handling events, and creating animations. jQuery helps developers write less code and achieve more functionality with minimal effort, making it a popular choice for web development projects. Learn more about jQuery <a href="https://api.jquery.com/">here</a>.
+                </li>
+            </ul>
+
+            <h3>Tools/Platforms:</h3>
+            <ul>
+                <li>
+                    <strong>Visual Studio:</strong> Visual Studio is an integrated development environment (IDE) developed by Microsoft. It provides comprehensive tools and services for building, debugging, and deploying applications for various platforms, including Windows, web, cloud, and mobile. Visual Studio offers features such as code editing, debugging, version control integration, and project management, streamlining the software development process. Documentation is available <a href="https://docs.microsoft.com/en-us/visualstudio/">here</a>.
+                </li>
+                <li>
+                    <strong>SQL Server:</strong> SQL Server is a relational database management system (RDBMS) developed by Microsoft. It provides a robust and scalable platform for storing, querying, and managing relational data. SQL Server offers features such as data storage, data retrieval, data manipulation, and security, making it a popular choice for building enterprise-level database applications. More information can be found <a href="https://docs.microsoft.com/en-us/sql/sql-server/">here</a>.
+                </li>
+                <li>
+                    <strong>Git:</strong> Git is a distributed version control system used for tracking changes in source code during software development. It enables multiple developers to collaborate on projects efficiently and manage code revisions effectively. Git provides features such as branching, merging, version history tracking, and distributed workflows, making it a powerful tool for software development teams. Documentation can be found <a href="https://git-scm.com/doc">here</a>.
+                </li>
+            </ul>
+
+            <h3>Databases:</h3>
+            <ul>
+                <li>
+                    <strong>SQL:</strong> SQL (Structured Query Language) is a domain-specific language used for managing and manipulating relational databases. It allows users to perform various operations such as querying data, updating records, and defining database structures. SQL is widely used in database management systems such as MySQL, PostgreSQL, SQL Server, and Oracle Database. Learn more about SQL <a href="https://dev.mysql.com/doc/">here</a>.
+                </li>
+            </ul>
+
+            <h3>Methodologies:</h3>
+            <ul>
+                <li>
+                    <strong>Agile Development:</strong> Agile Development is an iterative and incremental approach to software development that emphasizes flexibility, collaboration, and customer feedback. It involves breaking down project tasks into small increments and delivering working software iteratively. Common Agile methodologies include <a href="https://www.scrum.org/">Scrum</a> and <a href="https://kanbanize.com/kanban-resources/kanban-software">Kanban</a>. Agile practices help teams respond to changes quickly and deliver high-quality software products that meet customer needs.
+                </li>
+            </ul>
+        </section>
+
+
+
+
+    </main>
+
+    <footer>
+        <p>
+            Connect with me:
+            <a href="https://www.linkedin.com/in/shashank-chauhan-b4b5591ab/" target="_blank">LinkedIn</a> |
+            <a href="https://www.hackerrank.com/profile/shashank_chauha4" target="_blank">HackerRank</a> |
+            <a href="https://github.com/SCHAUHAN00001" target="_blank">GitHub</a>
+        </p>
+    </footer>
+    <script>
+        // Function to toggle the menu display
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            var menuIcon = document.querySelector(".menu-icon");
+
+            // Get the position of the menu icon
+            var iconRect = menuIcon.getBoundingClientRect();
+
+            // Set the position of the menu below the menu icon
+            menu.style.top = iconRect.bottom + "px";
+            menu.style.left = (iconRect.left - 75) + "px"; // Adjust 150 according to your desired distance
+
+            // Toggle the menu display
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+

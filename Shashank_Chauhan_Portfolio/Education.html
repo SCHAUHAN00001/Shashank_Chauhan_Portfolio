@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Shashank Chauhan</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000; /* Ensure header stays on top */
+        }
+
+            header h1 {
+                margin: 0;
+                font-size: 24px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+        .menu-icon {
+            cursor: pointer;
+            font-size: 24px;
+            margin-right: 20px;
+        }
+
+        .menu {
+            background-color: #333;
+            padding: 10px 15px;
+            text-align: left; /* Align menu options to the left */
+            position: fixed;
+            top: 50px; /* Adjust position below the menu icon */
+            left: 0;
+            display: none;
+            z-index: 999; /* Ensure menu stays on top */
+        }
+
+            .menu a {
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                padding: 10px 0;
+            }
+
+        .education-header {
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: 15px;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .education {
+            display: flex;
+            align-items: center;
+            margin-top: 70px; /* Adjust margin to accommodate fixed header */
+            margin-bottom: 40px;
+        }
+
+            .education .text {
+                flex: 1;
+                padding-right: 50px;
+                padding-left: 20px; /* Adjust the right padding to add some gap from the right side */
+                color: #000000;
+            }
+
+                .education .text p {
+                    margin-bottom: 5px; /* Reduce the gap between paragraphs */
+                }
+
+            .education img {
+                width: 200px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                cursor: pointer;
+            }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+            footer p {
+                margin: 0;
+            }
+
+        /* Media query for responsive design */
+        @media (max-width: 768px) {
+            .menu-icon {
+                display: block; /* Show the menu icon on smaller screens */
+            }
+
+            .menu {
+                display: none; /* Hide the menu initially on smaller screens */
+            }
+
+            .education {
+                margin-top: 120px; /* Adjust margin for fixed header on smaller screens */
+            }
+        }
+        /* Styles for links */
+        footer a {
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Education</h1>
+        <!-- Menu -->
+        <div class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="experience.html">Experience</a>
+        </div>
+        <!-- Hamburger Menu Icon -->
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776;
+        </div>
+    </header>
+
+    <div class="education-header">
+        Education
+    </div>
+
+    <main style="margin-bottom: 50px;">
+        <section class="education">
+            <div class="text">
+                <h2>Bachelor of Technology in Electronics and Communications Engineering</h2>
+                <p>Meerut Institute of Engineering and Technology, Meerut</p>
+                <p>April 2018 - July 2022</p>
+                <p>Amidst the dynamic landscape of Electronics and Communications Engineering at the Meerut Institute of Engineering and Technology, my exploration extended beyond theoretical frameworks and into the realm of practical application, where coding served as a bridge between conceptual understanding and tangible innovation.</p>
+
+                <p>In tandem with my academic pursuits, I embarked on a journey of discovery within the domain of programming languages, with a particular emphasis on <a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank">C#</a> and <a href="https://www.python.org/" target="_blank">Python</a>. These languages, renowned for their versatility and applicability, became indispensable tools in my arsenal, empowering me to traverse the intricate nexus of hardware and software integration with finesse.</p>
+
+                <p>Within the realm of Electronics, <a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank">C#</a> emerged as a cornerstone in my endeavors to develop robust applications for data acquisition and analysis. Leveraging its intuitive syntax and extensive libraries, I spearheaded projects ranging from the design of graphical user interfaces for embedded systems to the implementation of real-time control algorithms for electronic devices. Whether it was interfacing with sensors to gather environmental data or orchestrating the functionality of microcontrollers, <a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank">C#</a> proved instrumental in orchestrating seamless interactions between hardware components and user interfaces, thereby enhancing the accessibility and functionality of electronic systems.</p>
+
+                <p>Concurrently, <a href="https://www.python.org/" target="_blank">Python</a> emerged as a powerful ally in my quest to unravel the complexities of signal processing and communication systems. Renowned for its simplicity and readability, <a href="https://www.python.org/" target="_blank">Python</a> facilitated the implementation of intricate algorithms for digital signal processing, modulation-demodulation techniques, and error correction mechanisms. From simulating communication protocols to analyzing spectral data, <a href="https://www.python.org/" target="_blank">Python</a> empowered me to dissect the intricacies of electronic communication with precision and efficacy, laying bare the underlying principles governing information transmission and reception.</p>
+
+                <p>Moreover, the synergy between programming and electronics transcended the confines of academic projects, finding expression in extracurricular pursuits and collaborative endeavors. Whether it was participating in hackathons to prototype innovative solutions or contributing to open-source projects to democratize access to technology, the fusion of coding and electronics catalyzed a culture of innovation and ingenuity, where each line of code and circuit schematic became a testament to our collective ambition to push the boundaries of what was deemed possible.</p>
+
+                <p>In essence, my journey through the intersecting realms of programming and electronics was characterized by a relentless pursuit of innovation, a fervent commitment to excellence, and an unwavering passion for leveraging technology to engineer a brighter future.</p>
+
+            </div>
+            <a href="http://www.miet.ac.in/" target="_blank">
+                <img src="imag/MIET2.jpg" alt="Engineering">
+            </a>
+        </section>
+        <section class="education">
+            <div class="text">
+                <h2>Intermediate (12th) - Science Stream (PCM)</h2>
+                <p>Shikhar Shishu Sadan, Dhampur</p>
+                <p>April 2017 - May 2018</p>
+                <p>My journey in higher secondary education at Shikhar Shishu Sadan equipped me with a strong academic background in the Science stream with a focus on Physics, Chemistry, Mathematics, and English. The rigorous curriculum not only enhanced my analytical and problem-solving skills but also fostered a keen interest in scientific principles and their practical applications. Engaging in laboratory experiments, group discussions, and project presentations nurtured my critical thinking abilities and prepared me for the challenges of pursuing higher education in engineering.</p>
+                <p>In addition to academic pursuits, I actively participated in physical education activities, which provided a holistic approach to my educational journey. Engaging in sports and physical fitness activities not only promoted a healthy lifestyle but also instilled valuable lessons in teamwork, discipline, and resilience. Whether it was competing on the field or collaborating with teammates, my involvement in physical education complemented my academic endeavors, fostering a well-rounded development that transcended the confines of the classroom.</p>
+                <p>
+                    Together, the academic rigour of the Science stream and the holistic development nurtured through physical education laid a robust foundation for my future pursuits, instilling in me a passion for learning, a spirit of resilience, and a commitment to excellence that continues to guide me in my academic and personal endeavors.
+                </p>
+
+            </div>
+            <a href="http://www.shikhareducation.com/" target="_blank">
+                <img src="imag/Shikhar1.jpeg" alt="Science">
+            </a>
+        </section>
+        <section class="education">
+            <div class="text">
+                <h2>High School (10th) - General</h2>
+                <p>Shikhar Shishu Sadan, Dhampur</p>
+                <p> April 2015 - May 2016</p> <!-- Add the year here -->
+                <p>My high school education laid the cornerstone of my academic journey, providing a well-rounded foundation across various subjects. Beyond academic excellence, the school instilled in me essential values of discipline, perseverance, and teamwork. Participating in extracurricular activities, including sports and cultural events, enriched my overall development and taught me valuable life skills such as time management and leadership.</p>
+                <p>In addition to excelling academically, my involvement in extracurricular activities played a pivotal role in shaping my holistic development. Engaging in sports not only fostered physical fitness but also honed my competitive spirit and taught me the importance of resilience in the face of challenges. Similarly, participating in cultural events provided me with a platform to showcase my talents, while also fostering a sense of camaraderie and cultural appreciation among peers.</p>
+                <p>Moreover, the school's emphasis on extracurricular engagement instilled in me a strong sense of responsibility and time management skills. Balancing academic commitments with extracurricular pursuits taught me the art of prioritization and efficient utilization of resources, skills that have been invaluable in my academic and professional endeavors.</p>
+                <p>Overall, my high school education served as a crucible for personal growth, nurturing not only my intellectual curiosity but also fostering essential life skills and values that continue to guide me on my academic and personal journey.</p>
+            </div>
+            <a href="http://www.shikhareducation.com/" target="_blank">
+                <img src="imag/Shikhar2.jpeg" alt="High School">
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Connect with me:
+            <a href="https://www.linkedin.com/in/shashank-chauhan-b4b5591ab/" target="_blank">LinkedIn</a> |
+            <a href="https://www.hackerrank.com/profile/shashank_chauha4" target="_blank">HackerRank</a> |
+            <a href="https://github.com/SCHAUHAN00001" target="_blank">GitHub</a>
+        </p>
+    </footer>
+
+    <script>
+        // Function to toggle the menu display
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            var menuIcon = document.querySelector(".menu-icon");
+
+            // Get the position of the menu icon
+            var iconRect = menuIcon.getBoundingClientRect();
+
+            // Set the position of the menu below the menu icon
+            menu.style.top = iconRect.bottom + "px";
+            menu.style.left = (iconRect.left - 75) + "px"; // Adjust 150 according to your desired distance
+
+            // Toggle the menu display
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>

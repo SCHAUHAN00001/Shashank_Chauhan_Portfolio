@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Shashank Chauhan</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000; /* Ensure header stays on top */
+        }
+
+            header h1 {
+                margin: 0;
+                font-size: 24px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+        .menu-icon {
+            cursor: pointer;
+            font-size: 24px;
+            margin-right: 20px;
+        }
+
+        .menu {
+            background-color: #333;
+            padding: 10px 15px;
+            text-align: left; /* Align menu options to the left */
+            position: fixed;
+            top: 50px; /* Adjust position below the menu icon */
+            left: 0;
+            display: none;
+            z-index: 999; /* Ensure menu stays on top */
+        }
+
+            .menu a {
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                padding: 10px 0;
+            }
+
+        .experience-header { /* Changed class name from education-header to experience-header */
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding-right: 15px;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .experience {
+            display: block;
+            align-items: center;
+            margin-top: 70px; /* Adjust margin to match education page */
+            margin-bottom: 40px;
+            padding: 0 20px;
+            color: #000000; /* Match the padding used in the education page */
+        }
+
+            .experience .text { /* Changed class name from education to experience */
+                flex: 1; /* Take remaining space */
+                padding-right: 50px;
+                padding-left: 20px; /* Adjust the right padding to add some gap from the right side */
+
+                color: #000000;
+            }
+
+                .experience .text p { /* Changed class name from education to experience */
+                    margin-bottom: 5px; /* Reduce the gap between paragraphs */
+                }
+
+            .experience img { /* Changed class name from education to experience */
+                width: 200px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                cursor: pointer;
+                margin-right: 20px;
+            }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+            footer p {
+                margin: 0;
+            }
+
+        /* Media query for responsive design */
+        @media (max-width: 768px) {
+            .menu-icon {
+                display: block; /* Show the menu icon on smaller screens */
+            }
+
+            .menu {
+                display: none; /* Hide the menu initially on smaller screens */
+            }
+
+            .experience {
+                margin-top: 120px; /* Adjust margin for fixed header on smaller screens */
+            }
+        }
+        /* Styles for links */
+        footer a {
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Experience</h1>
+        <!-- Menu -->
+        <div class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="Education.html">Education</a>
+        </div>
+        <!-- Hamburger Menu Icon -->
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776;
+        </div>
+    </header>
+
+    <div class="experience-header">
+        <!-- Changed class name from education-header to experience-header -->
+        Experience <!-- Changed "Education" to "Experience" -->
+    </div>
+    <main style="margin-bottom: 50px;">
+        <section>
+            <div class="experience">
+                <!-- Add this div -->
+                <h2>Backend Developer | Eveda Online Services | Delhi NCR</h2>
+                <p>March 2023 - Present</p>
+                <ul>
+                    <li>Developed efficient backend solutions using <strong>C#</strong> and <strong>ASP.NET</strong>, ensuring optimal performance and scalability for Eveda's online services.</li>
+                    <li>Collaborated closely with frontend teams to seamlessly integrate backend functionality, thereby enhancing user experiences and ensuring smooth user interactions.</li>
+                    <li>Utilized <strong>SQL Server</strong> for robust database management, ensuring data integrity and optimal performance. Leveraged <strong>Git</strong> for version control, facilitating efficient collaboration and code management among team members.</li>
+                    <li>Conducted rigorous code reviews and optimizations to enhance system scalability, maintainability, and overall code quality.</li>
+                </ul>
+
+                <h3>Notable Projects:</h3>
+                <ol>
+                    <li>
+                        <strong>Website Optimization and Feature Integration</strong><br>
+
+                        <em>New Dimensions:</em> <a href="https://www.newdimensions.co.in/">Link</a>
+                    </li>
+                    <li>
+                        <strong>Online Platform Enhancement</strong><br>
+
+                        <em>Sunflower Wooden Handicrafts:</em> <a href="https://www.sunflowerwoodenhandicrafts.shop/">Link</a>
+                    </li>
+                </ol>
+
+                <h3>Manager Contact Details:</h3>
+                <ul>
+                    <li><em>Name:</em> Shakti Singh</li>
+                    <li><em>Email:</em> shakti@evedaonlineservices.com</li>
+                    <li><em>Phone:</em> 9818738994</li>
+                </ul>
+
+                <h3>Company Website:</h3>
+                <p><a href="https://www.evedaonlineservices.com">Eveda Online Services</a></p>
+
+                <h3>Owner Details:</h3>
+                <ul>
+                    <li><em>Name:</em> Geetanjali Singh</li>
+                    <li><em>Email:</em> geetanjali.singh2511@gmail.com</li>
+                    <li><em>LinkedIn:</em> <a href="https://www.linkedin.com/in/geetanjali-singh-83a53a100?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Owner's LinkedIn Profile</a></li>
+                </ul>
+                <!-- Add an image -->
+                <img src="imag/backend.png" alt="Backend Developer Image" width="200">
+            </div> <!-- Close the div -->
+        </section>
+        <section>
+            <div class="experience">
+                <h2>Web Development Internship | LTIMindtree Limited | Remote</h2>
+                <p>April 2022 – June 2022</p>
+                <ul>
+                    <li>Contributed to the development of high-performance .NET software, focusing on coding, debugging, and testing. Utilized best practices in software development to ensure efficient and reliable code.</li>
+                    <li>Actively participated in daily stand-ups and sprint planning meetings, providing valuable insights and contributing to the team's agile development process. This involvement facilitated seamless coordination and alignment among team members, resulting in the timely achievement of project milestones.</li>
+                    <li>Collaborated with team members to identify and resolve technical issues, leveraging problem-solving skills and technical expertise. Engaged in peer code reviews to maintain code quality and consistency across the project.</li>
+                    <li>Assisted in documenting software specifications and user manuals to ensure clear communication and knowledge transfer within the team. This documentation facilitated a smooth project handover process, enabling seamless transition and continuity of development efforts.</li>
+                </ul>
+
+                <h3>Notable Projects:</h3>
+                <ol>
+                    <li><strong>Project Name:</strong> Website Development</li>
+                    <li><strong>Website Name:</strong> E-Liberary Managment System</li>
+                    <li><strong>Link:</strong> <a href="https://github.com/SCHAUHAN00001/E-LibraryManagement.git">E-Liberary Managment System</a></li>
+                    <li><strong>Project Name:</strong> ML.Net,C# Coding </li>
+                    <li><strong>Website Name:</strong> Predictive Machine Learning Application</li>
+                    <li><strong>Link:</strong> <a href="https://github.com/SCHAUHAN00001/ML.Net-project-.git">Predictive Machine Learning Application</a></li>
+                </ol>
+
+
+                <ul>
+
+                    <li><strong>Email:</strong>  info@mindtree.com</li>
+
+                </ul>
+
+                <h3>Company Website:</h3>
+                <p><a href="https://www.ltimindtree.com/">LTIMindtree</a></p>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Connect with me:
+            <a href="https://www.linkedin.com/in/shashank-chauhan-b4b5591ab/" target="_blank">LinkedIn</a> |
+            <a href="https://www.hackerrank.com/profile/shashank_chauha4" target="_blank">HackerRank</a> |
+            <a href="https://github.com/SCHAUHAN00001" target="_blank">GitHub</a>
+        </p>
+    </footer>
+    <script>
+        // Function to toggle the menu display
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            var menuIcon = document.querySelector(".menu-icon");
+
+            // Get the position of the menu icon
+            var iconRect = menuIcon.getBoundingClientRect();
+
+            // Set the position of the menu below the menu icon
+            menu.style.top = iconRect.bottom + "px";
+            menu.style.left = (iconRect.left - 75) + "px"; // Adjust 150 according to your desired distance
+
+            // Toggle the menu display
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

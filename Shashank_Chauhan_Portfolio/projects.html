@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Shashank Chauhan</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add CSS styles for the project page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+            header h1 {
+                margin: 0;
+                font-size: 24px;
+            }
+
+        .menu-icon {
+            cursor: pointer;
+            font-size: 24px;
+            margin-right: 20px;
+        }
+
+        .menu {
+            background-color: #333;
+            padding: 10px 15px;
+            text-align: left;
+            position: fixed;
+            top: 70px; /* Adjust according to header height */
+            left: 20px; /* Adjust according to desired position */
+            display: none;
+            z-index: 999;
+        }
+
+            .menu a {
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                padding: 10px 0;
+            }
+
+        main {
+            padding-top: 100px; /* Adjust according to header height */
+            margin-bottom: 50px;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+            section h2 {
+                margin-top: 0;
+                color: #333;
+            }
+
+            section p {
+                color: #666;
+            }
+
+            section ul {
+                color: #666;
+                margin-left: 20px;
+            }
+
+                section ul li {
+                    margin-bottom: 10px;
+                }
+
+            section img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 8px;
+                margin-top: 15px;
+            }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+            footer p {
+                margin: 0;
+            }
+
+            footer a {
+                color: white;
+                font-weight: bold;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Projects</h1>
+        <!-- Hamburger Menu Icon -->
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776;
+        </div>
+    </header>
+
+    <!-- Menu -->
+    <div class="menu" id="menu">
+        <a href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="Education.html">Education</a>
+        <a href="experience.html">Experience</a>
+    </div>
+
+    <main>
+        <section>
+            <h2>E-Library Management</h2>
+            <p>The E-Library Management System represents a significant advancement in library operations, aimed at transforming traditional library services and elevating the overall user experience. Developed as a comprehensive solution, it seamlessly integrates cutting-edge technologies to streamline library processes and empower users with efficient access to resources.</p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+                <li><strong>Efficient Resource Management:</strong> The system offers robust tools for cataloging and organizing digital resources, including books, journals, articles, and multimedia materials. Through intuitive interfaces, librarians can easily add, edit, and manage resources, ensuring comprehensive coverage and accurate information retrieval.</li>
+                <li><strong>User-Friendly Interface:</strong> With a user-centric design, the E-Library Management System prioritizes ease of use and accessibility. Patrons can effortlessly search for desired materials, explore curated collections, and navigate through the library catalog with minimal effort, enhancing their overall browsing experience.</li>
+                <li><strong>Personalized Recommendations:</strong> Leveraging advanced algorithms, the system provides personalized recommendations based on user preferences, borrowing history, and browsing patterns. By offering tailored suggestions, it encourages exploration and discovery, fostering a deeper engagement with the library's offerings.</li>
+            </ul>
+            <p><strong>Technologies Used:</strong></p>
+            <ul>
+                <li><strong>ASP.NET:</strong> The project harnesses the power of ASP.NET framework for building dynamic and responsive web applications. Through its robust features and scalability, it ensures a seamless and secure online experience for library patrons.</li>
+                <li><strong>C#:</strong> As the primary programming language, C# facilitates the development of efficient backend logic and business processes. Its versatility and performance optimization capabilities contribute to the system's reliability and performance.</li>
+                <li><strong>JavaScript:</strong> JavaScript is employed to enhance the interactivity and responsiveness of the user interface, enabling dynamic content updates, form validation, and asynchronous interactions.</li>
+                <li><strong>SCSS (Sass):</strong> SCSS is utilized for stylesheet authoring, allowing for modular and maintainable CSS code. With its features like variables, mixins, and nested rules, it promotes code reusability and simplifies styling management.</li>
+            </ul>
+            <p><strong>Conclusion:</strong> The E-Library Management System represents a significant leap forward in modernizing library services, offering a comprehensive platform for digital resource management and user engagement. By leveraging innovative technologies and user-centric design principles, it sets a new standard for libraries in the digital age, empowering both librarians and patrons alike.</p>
+            <a href="https://www.example.com/elibrary" target="_blank">
+                <img src="imag\elib1.jpeg" alt="E-Library Management">
+                <img src="imag/elib2.jpeg" alt="E-Library Management" />
+            </a>
+        </section>
+
+
+        <section>
+            <h2>Cross-Platform Mobile Application</h2>
+            <p>The Cross-Platform Mobile Application project marks my entry into mobile app development using Xamarin C#. This project aimed to create a versatile mobile application that could run seamlessly on multiple platforms, providing a consistent user experience across various devices.</p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+                <li><strong>Platform Compatibility:</strong> The application was designed to work smoothly on both Android and iOS devices, eliminating the need for separate development efforts for each platform.</li>
+                <li><strong>Native-Like Performance:</strong> Leveraging Xamarin's capabilities, the app delivered native-like performance and user experience, ensuring optimal speed and responsiveness.</li>
+                <li><strong>Reusable Codebase:</strong> With Xamarin's cross-platform development approach, a significant portion of the codebase could be shared across platforms, reducing development time and effort.</li>
+            </ul>
+            <p><strong>Technologies Used:</strong></p>
+            <ul>
+                <li><strong>Xamarin:</strong> Xamarin served as the primary framework for building the cross-platform mobile application, enabling code sharing and native API access.</li>
+                <li><strong>Visual Studio:</strong> Visual Studio provided a comprehensive development environment for Xamarin projects, offering robust tools for coding, debugging, and testing.</li>
+                <li><strong>C#:</strong> C# served as the programming language for developing the application logic, offering a familiar and powerful language for cross-platform development.</li>
+                <li><strong>XAML:</strong> XAML (eXtensible Application Markup Language) was used for designing the user interface of the application, facilitating the creation of visually appealing and responsive UI components.</li>
+            </ul>
+            <p><strong>Conclusion:</strong> The Cross-Platform Mobile Application project was a significant milestone in my journey as a mobile app developer. By leveraging Xamarin and related technologies, I gained valuable experience in building high-quality, cross-platform mobile applications that offer a seamless user experience across diverse devices.</p>
+            <a href="https://www.example.com/mobileapp" target="_blank">
+                <img src="imag/cr1.jpeg" alt="Cross-Platform Mobile Application">
+            </a>
+        </section>
+
+        <section>
+            <h2>Predictive Machine Learning Application</h2>
+            <p>In my recent project, I took on the role of lead developer in the creation of a predictive machine learning application. This application aimed to utilize machine learning algorithms to analyze data and make predictions or decisions based on that analysis.</p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+                <li><strong>Data Analysis and Prediction:</strong> The application was designed to process large datasets, identify patterns, and generate predictive models using machine learning algorithms. This allowed users to make informed decisions based on data-driven insights.</li>
+                <li><strong>Scalability and Performance:</strong> Leveraging .NET Core, the application was built to handle large volumes of data efficiently and scale according to user requirements. This ensured optimal performance even when dealing with complex datasets.</li>
+                <li><strong>Integration with Visual Studio:</strong> Visual Studio provided a robust development environment for building and debugging the application. Its comprehensive set of tools and features facilitated seamless development and testing of machine learning models.</li>
+            </ul>
+            <p><strong>Technologies Used:</strong></p>
+            <ul>
+                <li><strong>ML.NET:</strong> ML.NET served as the primary framework for implementing machine learning functionality within the application. Its rich set of libraries and algorithms enabled the development of predictive models for various use cases.</li>
+                <li><strong>C#:</strong> C# was the language of choice for developing the application logic and integrating ML.NET functionalities. Its object-oriented nature and versatility made it well-suited for implementing complex algorithms and data processing tasks.</li>
+                <li><strong>.NET Core:</strong> .NET Core provided the runtime environment for deploying the application, offering cross-platform compatibility and high performance. Its support for modern development practices ensured seamless integration with other technologies.</li>
+            </ul>
+            <p><strong>Conclusion:</strong> The Predictive Machine Learning Application project represented a significant step forward in leveraging machine learning technologies to solve real-world problems. By harnessing the power of ML.NET, C#, and .NET Core, I was able to lead the development of an application that provided valuable insights and predictions to users, ultimately contributing to informed decision-making and improved outcomes.</p>
+            <a href="https://www.example.com/machinelearning" target="_blank">
+                <img src="imag/pm1.jpeg" alt="Predictive Machine Learning Application">
+            </a>
+        </section>
+
+
+        <section>
+            <h2>New Dimensions</h2>
+            <p>As a backend developer at New Dimensions, my primary responsibility revolves around optimizing the company's online presence and operations. Leveraging my expertise in .NET, SQL, and C#, I actively contribute to the development and maintenance of web applications, ensuring they meet the highest standards of performance, security, and reliability.</p>
+            <p><strong>Key Responsibilities:</strong></p>
+            <ul>
+                <li><strong>Backend Development:</strong> I play a key role in designing, implementing, and maintaining the backend logic of web applications, utilizing .NET, SQL, and C# to ensure optimal functionality and performance.</li>
+                <li><strong>Database Management:</strong> With a focus on data integrity and efficiency, I oversee database management tasks, including schema design, query optimization, and performance tuning, using SQL Server.</li>
+                <li><strong>Code Optimization:</strong> I continuously strive to optimize codebase performance and maintainability through refactoring, code reviews, and the adoption of best practices and design patterns.</li>
+                <li><strong>Collaboration and Communication:</strong> I actively collaborate with cross-functional teams, including frontend developers, designers, and project managers, to deliver high-quality solutions that meet project requirements and deadlines.</li>
+            </ul>
+            <p><strong>Technologies Used:</strong></p>
+            <ul>
+                <li><strong>.NET:</strong> .NET framework provides the foundation for backend development, offering a comprehensive set of tools and libraries for building robust and scalable web applications.</li>
+                <li><strong>SQL:</strong> SQL serves as the backbone for data management and storage, enabling efficient querying, manipulation, and retrieval of data from relational databases.</li>
+                <li><strong>C#:</strong> C# is the primary programming language used for backend development, offering a rich set of features, strong typing, and seamless integration with .NET framework.</li>
+            </ul>
+            <p><strong>Conclusion:</strong> At New Dimensions, I am committed to leveraging my expertise in .NET, SQL, and C# to drive innovation and excellence in backend development. By optimizing the company's online presence and operations, I contribute to its success and growth in today's competitive digital landscape.</p>
+            <a href="https://www.newdimensions.co.in/" target="_blank">
+                <img src="imag/ND1.png" alt="New Dimensions">
+            </a>
+        </section>
+
+
+        <section>
+            <h2>Sunflower Wooden Handicrafts</h2>
+            <p>As a backend developer at Sunflower Wooden Handicrafts, I am responsible for optimizing the company's online presence to provide a seamless and user-friendly experience for customers. By leveraging my expertise in .NET, SQL, and C#, I contribute to the development and maintenance of web applications, ensuring they meet the highest standards of performance, security, and usability.</p>
+            <p><strong>Key Responsibilities:</strong></p>
+            <ul>
+                <li><strong>Backend Development:</strong> I play a crucial role in designing, implementing, and maintaining the backend logic of web applications, using .NET, SQL, and C# to ensure optimal functionality and performance.</li>
+                <li><strong>User Experience Optimization:</strong> With a focus on enhancing user experience, I collaborate with frontend developers and designers to implement intuitive interfaces, smooth navigation, and efficient workflows.</li>
+                <li><strong>Data Management:</strong> I oversee database management tasks, including schema design, query optimization, and data migration, to ensure data integrity, efficiency, and scalability using SQL Server.</li>
+                <li><strong>Code Optimization:</strong> I continuously optimize codebase performance and maintainability through refactoring, code reviews, and the adoption of best practices and design patterns.</li>
+            </ul>
+            <p><strong>Technologies Used:</strong></p>
+            <ul>
+                <li><strong>.NET:</strong> .NET framework provides the foundation for backend development, offering a comprehensive set of tools and libraries for building robust and scalable web applications.</li>
+                <li><strong>SQL:</strong> SQL serves as the backbone for data management and storage, enabling efficient querying, manipulation, and retrieval of data from relational databases.</li>
+                <li><strong>C#:</strong> C# is the primary programming language used for backend development, offering a rich set of features, strong typing, and seamless integration with .NET framework.</li>
+            </ul>
+            <p><strong>Conclusion:</strong> At Sunflower Wooden Handicrafts, I am dedicated to leveraging my expertise in .NET, SQL, and C# to enhance the company's online presence and deliver exceptional user experiences. By optimizing web applications and implementing innovative solutions, I contribute to the company's success and growth in the digital marketplace.</p>
+            <a href="https://www.sunflowerwoodenhandicrafts.shop/" target="_blank">
+                <img src="imag/SW1.png" alt="Sunflower Wooden Handicrafts">
+            </a>
+        </section>
+
+
+        <section>
+            <h2>Tanisha Makeup Studio</h2>
+            <p>At Tanisha Makeup Studio, as a backend developer, I am responsible for enhancing the studio's online presence and functionality.</p>
+            <p><strong>Key Responsibilities:</strong></p>
+            <ul>
+                <li>Developing and maintaining backend systems to support the studio's online platform.</li>
+                <li>Implementing features to improve user experience, such as appointment scheduling and client management.</li>
+                <li>Ensuring data security and integrity through robust database management practices.</li>
+                <li>Collaborating with frontend developers and designers to integrate backend functionality seamlessly.</li>
+                <li>Monitoring system performance and troubleshooting issues to ensure uninterrupted service.</li>
+            </ul>
+            <p><strong>Technologies Used:</strong></p>
+            <ul>
+                <li><strong>.NET:</strong> .NET provides a powerful framework for developing a wide range of applications, including web applications for managing appointments, client information, or online booking systems for the studio.</li>
+                <li><strong>SQL:</strong> SQL is essential for managing the studio's data, ensuring that information is stored securely and efficiently. It allows for seamless management and retrieval of information, from client profiles to inventory details.</li>
+                <li><strong>C#:</strong> C# serves as the programming language that ties everything together. With its versatility and performance, C# enables the creation of dynamic and scalable backend systems tailored to the needs of Tanisha Makeup Studio.</li>
+            </ul>
+            <p><strong>About Tanisha Makeup Studio:</strong></p>
+            <p>Tanisha Makeup Studio is a hub for beauty enthusiasts, providing top-notch makeup services for various occasions and events. With a focus on creativity and client satisfaction, the studio offers personalized makeup solutions to enhance individual beauty.</p>
+            <a href="https://www.tanishamakeupstudio.com" target="_blank">
+                <img src="imag/TM1.png" alt="Tanisha Makeup Studio">
+            </a>
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <p>
+            Connect with me:
+            <a href="https://www.linkedin.com/in/shashank-chauhan-b4b5591ab/" target="_blank">LinkedIn</a> |
+            <a href="https://www.hackerrank.com/profile/shashank_chauha4" target="_blank">HackerRank</a> |
+            <a href="https://github.com/SCHAUHAN00001" target="_blank">GitHub</a>
+        </p>
+    </footer>
+
+    <script>
+        // Function to toggle the menu display
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            var menuIcon = document.querySelector(".menu-icon");
+
+            // Get the position of the menu icon
+            var iconRect = menuIcon.getBoundingClientRect();
+
+            // Set the position of the menu below the menu icon
+            menu.style.top = iconRect.bottom + "px";
+            menu.style.left = (iconRect.left - 75) + "px"; // Adjust 150 according to your desired distance
+
+            // Toggle the menu display
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
+
