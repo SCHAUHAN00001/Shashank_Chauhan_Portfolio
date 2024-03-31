@@ -28,13 +28,33 @@
 
         /* Styles for top right image */
         .profile-image {
-            position: absolute;
+            position: fixed;
             top: 20px;
             right: 20px;
-            width: 200px; /* Adjust width as needed */
-            height: 200px; /* Maintain aspect ratio */
+            width: 150px; /* Adjust width as needed */
+            height: 150px; /* Maintain aspect ratio */
             border-radius: 50%; /* Ensure it's a circle */
+            z-index: 9999; /* Ensure it's above other content */
         }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px 0; /* Reduce top padding to decrease the gap */
+            z-index: 9998; /* Ensure it's above the image */
+        }
+
+            header h1 {
+                font-size: 24px; /* Adjust font size for smaller screens */
+            }
+
+            header p {
+                font-size: 14px; /* Adjust font size for smaller screens */
+            }
 
         footer {
             background-color: #333;
@@ -53,6 +73,22 @@
                 color: white;
                 font-weight: bold;
             }
+
+        /* Responsive styles */
+        @media only screen and (max-width: 768px) {
+            header h1 {
+                font-size: 20px; /* Adjust font size for smaller screens */
+            }
+
+            header p {
+                font-size: 12px; /* Adjust font size for smaller screens */
+            }
+        }
+
+        /* Additional style to reduce gap between header and main content */
+        main {
+            margin-top: 150px; /* Adjust margin to reduce gap */
+        }
     </style>
 </head>
 <body>
@@ -69,8 +105,7 @@
         </nav>
     </header>
 
-    <main style="margin-bottom: 50px;">
-
+    <main>
         <img src="imag/shashankch.jpg" alt="Profile Picture" class="profile-image">
         <section class="about-me">
             <h2>About Me</h2>
